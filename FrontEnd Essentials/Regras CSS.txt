@@ -1,0 +1,20 @@
+Folha de estilo = conjunto de regras CSS
+Conjunto de Regras = Estilização dos elementos da página
+
+Regra:
+	Seletor: é o elemento que eu quero formatar = Tag = Atributo = Seletor Especial
+	Propriedade: é o que eu quero mudar no seletor;
+	Valor: vai definir como ficará a propriedade;
+
+	Sintaxe:
+		seletor {
+			propriedade: valor;
+			propriedade: valor;
+			propriedade: valor;
+			propriedade: valor;
+			propriedade: valor;
+			propriedade: valor;
+		}
+
+
+animation-timeline - é o carinha novo que irá comandar as animações por scroll

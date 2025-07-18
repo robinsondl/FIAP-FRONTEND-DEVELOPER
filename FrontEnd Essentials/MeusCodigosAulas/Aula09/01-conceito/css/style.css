@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #779b63;
+    --second-color: #d62828;
+    --third-color: #f77f00;
+    --fourth-color: #291e8b;
+    --bg-dark: #333;
+    --bg-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    font-family: calibri;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: var(--bg-white);
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+.container {
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.box1 {
+    background-color: var(--first-color);
+    min-height: 5rem;
+}
+
+.box2 {
+    background-color: var(--second-color);
+    min-height: 5rem;
+}
+
+.box3 {
+    background-color: var(--third-color);
+    min-height: 5rem;
+}
+
+.box4 {
+    background-color: var(--fourth-color);
+    min-height: 5rem;
+}
+
+
+/* Formatação do Grid - Separada pelos exemplos */
+
+.grid-container {
+    display: grid;
+}
+
+.ex-1 {
+    grid-template-columns: 5rem 10rem 7rem 15rem;
+}
+
+.ex-2 {
+    grid-template-columns: 20% 30% 20% 20%;
+}
+
+.ex-3 {
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+}
+
+/* função repeat - repete colunas com um tamanho definido */
+.ex-4 {
+    grid-template-columns: 100px repeat(2, 1fr) 100px;
+}
+
+/* função minmax - define o tamanho mínimo e o máximo que as colunas deverão ter */
+.ex-5 {
+    /* grid-template-columns: minmax(90px, 120px) 2fr 3fr 150px; */
+    grid-template-columns: repeat(4, minmax(100px, 200px));
+}
+
+/* auto-fit - Usar quando não sabemos o número colunas - colocar o máximo de colunas
+possíveis na mesma linha - Tentar não quebrar a linha -
+em tamanhos menores ele estica os elementos para que ocupem todo espaço disponível na linha
+Para funcionar precisa ter minmax() - deve estar em conjunto com o repeat() */
+.ex-6 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* auto-fill - mesma coisa do auto-fit, só que não cresce ocupar toda a linha, deixa a linha com espaço vago, isso pode fazer com que seu layout tenha espaços vagos entre os elementos */
+.ex-7 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* rows - recebem os mesmos valores das colunas */
+.ex-8 {
+    grid-template-rows: 10rem 5rem 20rem 60rem;
+}
+
+.ex-9 {
+    grid-template-rows: 1fr 2fr 3fr 4fr;
+}

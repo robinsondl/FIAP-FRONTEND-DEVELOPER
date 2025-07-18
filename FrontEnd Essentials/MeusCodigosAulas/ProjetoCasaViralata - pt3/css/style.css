@@ -1,0 +1,306 @@
+/*  elemento root da página = HTML - Você irá declarar todas as variáveis no root, fazendo isso, as variáveis serão GLOBAIS, podendo usar em todo o código. */
+:root {
+    --color-light: #f4f4f4;
+    --color-dark: #333;
+    --color-blue-200: #00ffff;
+    --color-blue-800: #111120;
+    --gradient: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5));
+
+    /* efeito do scroll da página */
+    scroll-behavior: smooth;
+}
+
+/* reset das confgs padrão da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--color-blue-200);
+}
+
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    color: var(--color-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.bg-banner-1 {
+    background-image: var(--gradient), url(../images/banner3.jpg);
+}
+
+.bg-banner-2 {
+    background-image: var(--gradient), url(../images/banner2.jpg);
+}
+
+.bg-blue-800 {
+    background-color: var(--color-blue-800);
+}
+
+.header-page {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-blue-200);
+    z-index: 2;
+}
+
+.header-page ul {
+    display: flex;
+    column-gap: 3rem;
+}
+
+/* Menu sanduiche */
+
+.sanduiche {
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-blue-200);
+    margin: .5rem auto;
+    border-radius: .7rem;
+    transition: .5s;
+}
+
+.hero {
+    min-height: calc(100dvh - 100px);
+    text-align: center;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero h2 {
+    font-size: clamp(40px, 6vw, 50px);
+    text-wrap: balance;
+}
+
+.hero span {
+    color: var(--color-blue-200);
+}
+
+.hero p {
+    font-size: clamp(16px, 3vw, 25px);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: 2px solid var(--color-light);
+    padding: .8rem 3rem;
+    border-radius: .7rem;
+    font-size: 2.5rem;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: var(--color-blue-800);
+    border-color: var(--color-blue-200);
+}
+
+/* Pensando no responsivo do hero
+@media(max-width: 1024) {}
+@media(width <=1024px) {
+    .hero h2 {
+        background-color: #dc143c;
+    }
+}
+@media(width <=800px) {
+    .hero h2 {
+        background-color: #090;
+    }
+}
+@media(width <=500px) {
+    .hero h2 {
+        background-color: yellow;
+    }
+} */
+
+@media(width <=1024px) {
+
+    .container {
+        background-attachment: scroll;
+    }
+
+    .sanduiche {
+        display: block;
+    }
+
+    .nav-menu {
+        background-color: var(--color-blue-800);
+        width: 100%;
+        min-height: 100dvh;
+        position: fixed;
+        left: 0;
+        top: -1200px;
+        z-index: 1;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
+        transition: .5s;
+    }
+
+    .active {
+        top: 0;
+    }
+
+    .sanduiche.active .barra:first-child {
+        transform: translateY(8px) rotate(405deg);
+    }
+
+    .sanduiche.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+
+    .sanduiche.active .barra:last-child {
+        transform: translateY(-8px) rotate(-405deg);
+    }
+}
+
+/************************ grid-pets ************************/
+
+.pets {
+    padding: 2rem 0;
+    text-align: center;
+
+    h2 {
+        margin: 3rem 0 5rem;
+        font-size: clamp(40px, 6vw, 50px);
+
+        span {
+            color: var(--color-blue-200);
+        }
+    }
+
+    .grid-pets {
+        width: 90%;
+        margin: 0 auto 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+
+        .grid-item {
+            border: 1px solid var(--color-blue-200);
+            padding: 2rem;
+            border-radius: .8rem;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.05;
+            }
+
+            img {
+                width: 90%;
+                border-radius: .8rem;
+            }
+        }
+
+        @media(width <=1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(width <=768) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+/************************ fotos ************************/
+
+.fotos {
+
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h2 {
+        margin: 3rem 0 5rem;
+        font-size: clamp(40px, 6vw, 50px);
+
+        span {
+            color: var(--color-blue-200);
+        }
+    }
+
+    .gallery {
+        margin: 3rem;
+        padding: 1rem;
+        columns: 30rem 3;
+
+        img {
+            display: block;
+            width: 100%;
+            padding: 1rem 0;
+            border-radius: 2rem;
+            filter: grayscale(1);
+            transition: 0.5;
+            animation: animaGallery both;
+            animation-timeline: view(85% 15%);
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+
+    }
+
+}
+
+@keyframes animaGallery {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

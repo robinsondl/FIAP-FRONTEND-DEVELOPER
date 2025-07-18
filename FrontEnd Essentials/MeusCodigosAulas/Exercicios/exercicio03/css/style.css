@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+    font-family: "Albert Sans";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: black;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    /* background-attachment: fixed; */
+}
+
+.bg-banner-home {
+    background-image: url(../images/banner.jpg);
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.logo span {
+    color: #6288AB;
+}
+
+.header-page {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-page ul {
+    display: flex;
+    column-gap: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4rem;
+    text-align: center;
+    color: #6288AB;
+}
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.container img {
+    max-width: 200px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+}
+
+img {
+    background-color: #6288AB;
+}

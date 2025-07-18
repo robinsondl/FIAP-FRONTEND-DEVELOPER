@@ -1,0 +1,13 @@
+Links geral:
+
+Referências FrontEnd                - https://www.notion.so/Refer-ncias-Front-End-3a8a4b868eb7449d93a87f40d249588e
+Ensinando utilizar CSS puro         - ttps://codepen.io/rglazebrook/pen/DzvONe
+Site para recriar (desafio pessoal) - https://www.authkit.com/
+Imagens                             - https://www.pexels.com/
+Pesquisar sobre os lançamentos      - https://caniuse.com/
+Google Fonts                        - https://fonts.google.com/
+Criar nome para as classes          - https://en.bem.info/methodology/
+Ícones gratuitos                    - https://www.iconfinder.com/
+Ícones gratuitos                    - https://fontawesome.com/  - Chamada para o fontawesome: https://cdnjs.com/libraries/font-awesome
+Ícones gratuitos                    - https://boxicons.com/
+Boas praticas com display flex      - https://defensivecss.dev/

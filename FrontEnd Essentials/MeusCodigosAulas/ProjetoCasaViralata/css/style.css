@@ -1,0 +1,60 @@
+/*  elemento root da página = HTML - Você irá declarar todas as variáveis no root, fazendo isso, as variáveis serão GLOBAIS, podendo usar em todo o código. */
+:root {
+    --color-light: #f4f4f4;
+    --color-dark: #333;
+    --color-blue-800: #000033;
+    --gradient: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
+}
+
+/* reset das confgs padrão da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    color: var(--color-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.bg-banner-1 {
+    background-image: var(--gradient), url(../images/banner1.jpg);
+}
+
+.bg-banner-2 {
+    background-image: var(--gradient), url(../images/banner2.jpg);
+}
+
+.bg-blue-800 {
+    background-color: var(--color-blue-800);
+}
+
+.hero h1 {
+    font-size: 8vmin;
+}
+
+.hero p {
+    font-size: 4vmin;
+}

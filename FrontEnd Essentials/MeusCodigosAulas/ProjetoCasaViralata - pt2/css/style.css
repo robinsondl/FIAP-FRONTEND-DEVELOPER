@@ -1,0 +1,161 @@
+/*  elemento root da página = HTML - Você irá declarar todas as variáveis no root, fazendo isso, as variáveis serão GLOBAIS, podendo usar em todo o código. */
+:root {
+    --color-light: #f4f4f4;
+    --color-dark: #333;
+    --color-blue-200: #00ffff;
+    --color-blue-800: #111120;
+    --gradient: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5));
+
+    /* efeito do scroll da página */
+    scroll-behavior: smooth;
+}
+
+/* reset das confgs padrão da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--color-blue-200);
+}
+
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    color: var(--color-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.bg-banner-1 {
+    background-image: var(--gradient), url(../images/banner3.jpg);
+}
+
+.bg-banner-2 {
+    background-image: var(--gradient), url(../images/banner2.jpg);
+}
+
+.bg-blue-800 {
+    background-color: var(--color-blue-800);
+}
+
+.header-page {
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-blue-200);
+}
+
+.header-page ul {
+    display: flex;
+    column-gap: 3rem;
+}
+
+/* Menu sanduiche */
+
+.sanduiche {
+    cursor: pointer;
+    display: none;
+}
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-blue-200);
+    margin: .5rem auto;
+    border-radius: .7rem;
+    transition: .5s;
+}
+
+.hero {
+    min-height: calc(100dvh - 100px);
+    text-align: center;
+    padding: 0% 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero h2 {
+    font-size: clamp(40px, 6vw, 50px);
+    text-wrap: balance;
+}
+
+.hero span {
+    color: var(--color-blue-200);
+}
+
+.hero p {
+    font-size: clamp(16px, 3vw, 25px);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: 2px solid var(--color-light);
+    padding: .8rem 3rem;
+    border-radius: .7rem;
+    font-size: 2.5rem;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: var(--color-blue-800);
+    border-color: var(--color-blue-200);
+}
+
+/* Pensando no responsivo do hero
+@media(max-width: 1024) {}
+@media(width <=1024px) {
+    .hero h2 {
+        background-color: #dc143c;
+    }
+}
+@media(width <=800px) {
+    .hero h2 {
+        background-color: #090;
+    }
+}
+@media(width <=500px) {
+    .hero h2 {
+        background-color: yellow;
+    }
+} */
+
+@media(width <=1024px) {
+    .hero h2 {
+        display: block;
+    }
+}

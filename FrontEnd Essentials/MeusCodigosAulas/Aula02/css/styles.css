@@ -1,0 +1,70 @@
+/* chamada da fonte */
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+body {
+    font-family: Poppins-Light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins-Medium;
+    color: #1e5fa0;
+}
+
+h1 {
+    font-size: 45px;
+    /* color: #1e5fa0;
+    font-family: Poppins-Medium;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2; */
+}
+
+p {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.8;
+    /* text-align: center; */
+    text-wrap: balance;
+    /* text-transform: capitalize; */
+}
+
+img {
+    /* referência da porcentagem é a largura do elemento pai  */
+    width: 100%;
+    /* width: 200px; */
+    /* height: 100%; */
+}
+
+a {
+    text-decoration: none;
+    color: #dc143c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #000;
+}
+
+h1:hover {
+    color:#dc143c;
+}
+
+ul, ol {
+    /* retirar marcardores que vem nas listas: ° / númerico */
+    list-style: none;
+}
+
+/* usando classes CSS */
+.box {
+    background-color: #dc143c;
+    color: #fff;
+    font-size: 20px;
+}

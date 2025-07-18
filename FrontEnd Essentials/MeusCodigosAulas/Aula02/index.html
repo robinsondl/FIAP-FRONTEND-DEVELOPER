@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Tipo de HTML que ele irá ler HTML5 -->
+<html lang="pt-br"> <!-- Ínicio do documento HTML + atributo idioma importante (pt-br) -->
+
+<head> <!-- Cabeçalho da página - recursos externos - meta tags = geram informações da página -->
+    <meta charset="UTF-8"> <!-- Letras com acentost -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Estrutura</title> <!-- Title da página = noe de aplicação/site -->
+
+    <!-- chamada do Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet"> -->
+
+    <!-- chamada para o arquivo CSS externa -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- "style" CSS Interna -->
+    <style>
+        h1, h2, h3 {
+            color: #900;
+        }
+    </style>
+
+</head> <!--Fechamento do cabeçalho - temos mais informações a serem inseridas -->
+
+<body> <!-- Abre corpo da página - conteúdo da sua página -->
+
+    <!-- headings 
+    Usando CSS Inline - Formatação vai dentro da linha. NUNCA USAR, exemplo:
+    <h1 style="color: #ff6600;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    QUANDO ESTIVER USANDO TAILWIND, NÃO DIGA QUE ELE FAZ O MESMO - Ali são classes CSS Utilitátias -->
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    <h2>Título 02</h2>
+    <h3>Título 03</h3>
+    <h4>Título 04</h4>
+    <h5>Título 05</h5>
+    <h6>Título 06</h6>
+
+    <!-- parágrafos -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tempora expedita sapiente natus quo similique
+        ipsum optio explicabo, ducimus nulla fugit fugiat voluptas in eos reiciendis voluptatem, illo architecto
+        excepturi?</p>
+
+    <!-- imagens -->
+    <!-- "figure" conteiner para imagens -->
+    <figure>
+        <img src="./images/pexels-heidi-gilbert-1459611-19734898.jpg" alt="Predio antigo muito bonito com janelas, construção asiatica" loading="lazy">
+        <img src="./images/pexels-ludodelot-19435364.jpg" alt="gato laranja muito foto, que olha para o nada com coleira preta no mato" loading="lazy">
+        <img src="./images/pexels-scarpato-29368200.jpg" alt="gato laranja bem peludinho com carinha de bravo" loading="laze">
+        <figcaption>Imagens do site
+            <a href="https://www.pexels.com/" target="_blank">pexels.com</a>
+        </figcaption>
+    </figure>
+
+    <!-- listas ordenadas -->
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ol>
+
+    <!-- listas não ordenadas -->
+    <ul>
+        <li>HTML</li>
+        <li class="box">CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <!-- outra imagem -->
+     <img src="./images/pexels-solliefoto-336948.jpg" alt="mulher mexendo no biriri e vendo reals do insta">
+
+    <!-- usando classes CSS - div*3 cria 3 div's de uma vez, div*5 cria 5, etc -->
+    <!-- colocando .box e dar um enter, cria já a class com box <div class="box"></div> -->
+    <div class="box">1</div>
+    <div>2</div>
+    <div class="box">3</div>
+
+</body> <!-- Fecha - fim conteúdo -->
+
+</html> <!-- Fim do documento - acabou a página -->

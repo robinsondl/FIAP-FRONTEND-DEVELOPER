@@ -1,0 +1,6 @@
+Live server
+Auto Rename Tag
+Material Icon Theme
+Image preview
+Atom One Dark Theme
+Dracula Theme Official

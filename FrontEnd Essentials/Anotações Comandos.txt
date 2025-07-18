@@ -1,0 +1,18 @@
+Configurações do VS:
+CTRL + ,
+-------------------------------------------
+Comentários:
+CTRL KC
+CTRL KU
+CTRL ;
+c + ENTER (APENAS HTML)	
+-------------------------------------------
+Duplicar a linha selecionada:
+SHIFT + ALT + SETA PARA BAIXO
+-------------------------------------------
+Mover o conteúdo/linha pelo código
+ALT + SETA PARA CIMA OU BAIXO
+-------------------------------------------
+Indentar código todo
+
+Selecione tudo: ALT + SHIFT + F

@@ -1,0 +1,91 @@
+/* Reset CSS = Representa todas as marcações da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+}
+
+.container {
+    background-color: #DDE0E1;
+    width: 90%;
+    min-height: 160px;
+    margin: 45px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    /* text-align: center;
+    align-content: center; */
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.border-radius {
+    border-radius: 7px;
+}
+
+.avatar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar h3 {
+    font-weight: 400;
+}
+
+.social-midia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-midia a {
+    font-size: 30px;
+    color: #000;
+}
+
+.social-midia a:hover {
+    color: #dc143c;
+}
+
+.gap-100 {
+    gap: 100px;
+}
