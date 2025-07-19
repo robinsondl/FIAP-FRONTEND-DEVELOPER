@@ -1,0 +1,11 @@
+:root {
+    --color-blue-900: #005;
+}
+
+.text-blue-900 {
+    color: var(--color-blue-900);
+}
+
+.bg-blue-900 {
+    background-color: var(--color-blue-900);
+}
