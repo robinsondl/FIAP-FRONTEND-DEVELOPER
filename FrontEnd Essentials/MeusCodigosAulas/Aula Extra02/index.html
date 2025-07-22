@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Componentes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Chamada do CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="bg-blue-900 text-light mt-5 mb-3 p-5 rounded display-5">Bootstrap Componentes</h1>
+        <p class="lead text-blue-900 mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem, fuga corrupti totam perferendis
+            iste
+            et. Dicta incidunt provident totam ullam itaque omnis quod quasi maiores recusandae animi deleniti ex soluta
+            iure dolore obcaecati molestias sapiente consequuntur fuga praesentium vitae pariatur nemo temporibus,
+            libero
+            dolorum. Exercitationem quidem beatae nobis aliquam!
+        </p>
+
+
+        <figure>
+            <img src="./images/pexels-rahulp9800-1652353.jpg" alt="showzinho velho São Paulo" class="img-fluid rounded">
+        </figure>
+
+        <div class="d-flex justify-content-end mb-5">
+            <a href="" class="btn btn-primary btn-lg">Mais informações</a>
+        </div>
+
+        <h2 class="display-5 text-blue-900 mb-3">Formulário de compra</h2>
+
+        <!-- iniciando o formulario -->
+        <form action="comprarIngressos" name="comprarIngressos" method="get" action="" class="border rounded p-3">
+            <!-- iniciar o grid -->
+            <section class="row mb-5">
+
+                <div class="mb-5 col-md-12 col-lg-4">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o seu nome"
+                        minlength="10" maxlength="20" required>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite uma senha"
+                        minlength="10" maxlength="20" required>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail"
+                        maxlength="50" required>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" class="form-control" placeholder="Digite seu telefone" min="11"
+                        max="11" required></input>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="evento" class="form-label">Evento</label>
+                    <select name="evento" id="evento" class="form-select">
+                        <option value="0" disabled selected>Selecione o evento</option>
+                        <option value="1">Show do Pink Floyd</option>
+                        <option value="2">Show do Led Zeppelin</option>
+                        <option value="3">Star Wars 258</option>
+                        <option value="4">Show do Queen</option>
+                    </select>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="qtdIngressos">Quantidade de ingressos</label>
+                    <input type="number" id="qtdIngressos" name="qtdIngressos" class="form-control" min="1" max="3"
+                        placeholder="Insira da quantidade" required>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <!-- inputs possiveis time - datetimelocal - week - month -->
+                    <label for="dataEvento">Data do evento</label>
+                    <input type="date" id="dataEvento" name="dataEvento" class="form-control">
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <label for="cidade" class="form-label">Cidade do evento</label>
+                    <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Digite a sua cidade"
+                        list="listaCidades" request>
+                    <datalist id="listaCidades">
+                        <option value="São Paulo"></option>
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Belo Horizonte"></option>
+                        <option value="Porto Alegre"></option>
+                        <option value="Curitiba"></option>
+                        <option value="Fortaleza"></option>
+                    </datalist>
+                </div>
+
+                <div class="mb-5 col-lg-4">
+                    <p>Tipo de ingresso</p>
+                    <div class="mb-5 form-check form-check-inline">
+                        <input type="radio" name="tipoIngresso" class="form-check-input" id="tipoIngresso1">
+                        <label for="tipoIngresso1" class="form-check-label">Meia
+                            entrada</label>
+                    </div>
+                    <div class="mb-5 form-check form-check-inline">
+                        <input type="radio" name="tipoIngresso" class="form-check-input" id="tipoIngresso2">
+                        <label for="tipoIngresso2" class="form-check-label">Inteira</label>
+                    </div>
+                    <div class="mb-5 form-check form-check-inline">
+                        <input type="radio" name="tipoIngresso" class="form-check-input" id="tipoIngresso3">
+                        <label for="tipoIngresso3" class="form-check-label">Pista</label>
+                    </div>
+                    <div class="mb-5 form-check form-check-inline">
+                        <input type="radio" name="tipoIngresso" class="form-check-input" id="tipoIngresso4">
+                        <label for="tipoIngresso4" class="form-check-label">VIP</label>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <label for="comentario" class="form-label">Quero fazer um comentário</label>
+                    <textarea name="comentario" id="comentario" class="form-control" placeholder="Faça um comentário"
+                        required></textarea>
+                </div>
+
+                <div class="mb-5">
+                    <input type="checkbox" id="concordo">
+                    <label for="concordo">Li e concordo com os termos.</label>
+                </div>
+
+                <div class="mb-5 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary bn">Comprar Ingressos</button>
+
+                    <!-- Não usar pois não tem valor semântico
+                     Type botão para apagar tudo
+                     <button type="reset">Resetar compra</button>
+                     Type botão para chamar função do JS
+                     <button type="button">Comprar Ingressos</button> -->
+                </div>
+
+            </section>
+        </form>
+
+    </div>
+
+    <!-- Chamada do JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
